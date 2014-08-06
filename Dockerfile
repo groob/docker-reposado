@@ -20,7 +20,7 @@ RUN git clone https://github.com/wdas/reposado.git /reposado
 ADD preferences.plist /reposado/code/
 ADD reposado.conf /etc/nginx/sites-enabled/reposado.conf
 
-VOLUME ["/reposado", "/reposado/metadata", "/reposado/html" ]
+#VOLUME ["/reposado", "/reposado/metadata", "/reposado/html" ]
 EXPOSE 80
 
 RUN rm -f /etc/nginx/sites-enabled/default
