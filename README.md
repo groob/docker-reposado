@@ -21,7 +21,7 @@ Currently, the port *has* to be 8080 for both the container and the host. The Lo
 [Margarita](https://github.com/jessepeterson/margarita) is also bundled in but not enabled by default. 
 You can run the Margarita Flask server either together with nginx, by opening both -p 8080 and -p 8089 or separately like so:
 ```
-/usr/bin/docker run --rm --name margarita --volumes-from reposado-data -p 8089:8089 macadmins/reposado:margarita python /home/app/margarita/margarita.py
+/usr/bin/docker run --rm --name margarita --volumes-from reposado-data -p 8089:8089 macadmins/reposado python /home/app/margarita/margarita.py
 ```
 
 #TODO
